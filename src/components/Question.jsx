@@ -9,14 +9,14 @@ function Question({ index, onSelectAnswer, onSkipAnswer }) {
     isCorrect: null,
   });
 
-  let timer = 10000;
+  let timer = 40000;
 
   if (answer.selectedAnswer) {
-    timer = 2000;
+    timer = 1000;
   }
 
   if (answer.isCorrect !== null) {
-    timer = 3000;
+    timer = 2000;
   }
 
   function handleSelectAnswer(answer) {
